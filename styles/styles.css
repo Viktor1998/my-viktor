@@ -1,0 +1,339 @@
+body {
+    margin: 0%;
+    font-family: 'Manjari', sans-serif; /*уст.шрифт */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    width: 100%;    
+    height: 120px;
+    border-bottom: 1px solid #e5e5e5;
+    display: flex;
+    justify-content: center;
+}
+
+.header-content {
+    width: 1024px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 235px;
+    margin-left: 14px;
+}
+.links {
+    width: 460px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.link {                      /* работа с ссылками */
+    text-decoration: none; /* убрать нижнее подчеркивание */
+    font-size: 19px;
+    color: #323332;
+    transition: .3s;
+    padding: 12px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.link:active {
+    color: #323332;
+}
+
+.link:hover {
+    color: #e5e5e5;
+    font-weight: 500;
+    background: #373737; /* чтобы засветить ссылку при наведении*/ 
+}
+.banner{
+    width: 1024px;
+    height:540px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.ipad{
+    margin-right: -150px;
+}
+.title-big{
+    font-size: 44px;
+}
+.title-middle{
+    font-size: 44px;
+}
+.banner-name{
+    display:flex;
+    flex-direction: column;
+}
+.banner-button{
+    background: #373737;
+    width: 205px;
+    height: 40px;
+    color:white;
+    font-size: 18px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.banner-button:hover{
+    animation-name: shake;
+    animation-duration: .2s;
+    animation-iteration-count: infinite;
+
+}
+.camera{
+    margin-right: 10px;
+
+}
+.content{
+    width: 1024px;
+    display: flex;
+    justify-content: space-between;
+}
+.content-info{
+    height: 1040px;
+    width: 680px;
+
+}
+.ads{
+    height: 1000px;
+    width: 325px;
+}
+.slider{
+    width: 100%;
+    height: 242px;
+    display: flex;
+    position: relative;
+}
+.slider-img{
+    height: 100%;
+    width: 310px;
+    /*background: #e9e6e6;*/
+    /*box-shadow: inset -30px 0 70px 1px rgba(0, 0, 0, 0.3);*/
+    background: radial-gradient(#e9e6e6,#a5a5a5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+
+}
+.slider-content{
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    font-size: 12px;
+
+
+
+}
+.slider-title{
+    font-size: 21px;
+    line-height: 30px;
+    margin-bottom: 17px;
+
+}
+.slider-buttons{
+    width: 63px;
+    height: 39px;
+    position: absolute;
+    right:  0;
+    bottom: 0;
+    display: flex;
+
+}
+.button-item{
+    height: 100%;
+    width: 32px;
+    background-color: #989998;
+    cursor: pointer;
+    transition: .3s;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+.button-item:hover{
+    background-color: #7c7d7c;
+}
+.next{
+    border-left: 1px solid white;
+    background-image: url('../images/right.png');
+}
+.prev{
+    background-image: url('../images/right.png');
+    transform: rotate(180deg);
+}
+.cards{
+    width: 100%;
+    height: calc(100% - 242px);
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.card-item{
+ 
+    width: 215px;
+    height: 215px;
+    overflow: hidden;
+}
+.card-title{
+    font-size: 20px;
+
+}
+.card-date{
+    font-size: 12px;
+    display: block;
+    margin:16px 0 19px 0;    
+}
+.card-text{
+    font-size: 12px;
+    display: block;
+    width: 100%;
+    text-align: justify;
+}
+.ads-ipad{
+    height: 250px;
+    width: 100%;
+    border: 1px solid #e5e1e1;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 25px;
+    box-sizing: border-box;
+}
+.ipad-title-gray{
+    color: #9ba08d;
+    margin-top: 21px;
+}
+.ipad-title-green{
+    color: #b8dc58;
+    font-size: 28px;
+    font-weight: bold;
+}
+.ipad-img{
+    margin-top:20px;
+}
+.weeks{
+    width: 100%;
+    height: 270px;
+    background: #86e7f0;
+    margin-top:26px;
+    position: relative;
+    padding-top:122px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+}
+
+.weeks:after{
+    content: '12 weak';
+    width: 122px;
+    height: 122px;
+    font-size: 37px;
+    border-radius: 50%;
+    background: #ef809f;
+    position: absolute;
+    left: calc(50% - 61px);
+    top:-16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid white;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.weeks-title{
+    text-transform: uppercase;
+    font-size: 33px;
+    margin-bottom: 17px;
+}
+.weeks-text{
+    width: 240px;
+    letter-spacing: 3px;
+    text-align: center;
+}
+.weeks-btn{
+    width: 180px;
+    height: 30px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+    background: #58d1dc;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    margin-top:10px;    
+}
+.form{
+    height: 270px;
+    width: 100%;
+    background: #393a39;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 7px solid #bb4465;
+    box-sizing: border-box; 
+}
+.form-title{
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.form-text{
+    width: 257px;
+    font-size: 13px;
+    margin-bottom: 16px;
+}
+.form-inp{
+    width: 257px;
+    height: 26px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    margin-bottom: 12px;
+}
+.form-btn{
+    background: #bb4465;
+    height: 32px;
+    width: 182px;
+    text-transform: uppercase;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+}
+@keyframes shake{
+    0%{
+        transform: rotate(0);
+    }
+    33%{
+        transform: rotate(2deg) scale(1.2) red;
+    }
+    66%{
+        transform: rotate(0) scale(0.9);
+    }
+    100%{
+        transform: rotate(-2deg) scale(1.1);
+    }
+}
